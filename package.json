@@ -1,16 +1,27 @@
 {
-  "dependencies": {
-    "bcrypt": "^5.1.1",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^7.6.3",
-    "nodemon": "^3.0.1",
-    "prettier": "^3.0.3"
-  },
-  "start": "server.js",
-  "scripts": {
-    "dev": "nodemon server",
-	"prettier": "npx prettier --write ."
-  }
+	"dependencies": {
+		"bcrypt": "^5.1.1",
+		"dotenv": "^16.3.1",
+		"express": "^4.18.2",
+		"jsonwebtoken": "^9.0.2",
+		"mongoose": "^7.6.3",
+		"nodemon": "^3.0.1"
+	},
+	"devDependencies": {
+		"commitizen": "^4.3.0",
+		"cz-conventional-changelog": "^3.3.0",
+		"husky": "^8.0.0",
+		"prettier": "^3.0.3"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	},
+	"start": "server.js",
+	"scripts": {
+		"dev": "nodemon server",
+		"prettier": "npx prettier --write .",
+		"prepare": "husky install"
+	}
 }

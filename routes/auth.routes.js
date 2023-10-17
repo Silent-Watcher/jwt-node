@@ -9,5 +9,4 @@ const authRouter = Router();
 authRouter.post('/login', loginController);
 authRouter.post('/register', registerController);
 
-
 module.exports = authRouter;
