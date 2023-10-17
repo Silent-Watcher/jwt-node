@@ -2,6 +2,9 @@ const express = require('express');
 const http = require('http');
 const errorHandler = require('./middlewares/global/errorHandlerMiddleware');
 const notFoundErrorHandler = require('./middlewares/global/notFoundErrorHandler.middleware');
+
+require('./config/mongoose.config');
+
 const app = express();
 const PORT = 3000;
 
