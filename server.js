@@ -2,19 +2,17 @@ const express = require('express');
 const http = require('http');
 const errorHandler = require('./middlewares/global/errorHandlerMiddleware');
 const notFoundErrorHandler = require('./middlewares/global/notFoundErrorHandler.middleware');
+const router = require('./routes/router');
 
 require('./config/mongoose.config');
 
 const app = express();
-const PORT = 3000;
-
 const server = http.createServer({}, app);
+const PORT = 3000;
 
 app.use(express.json(), express.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
-  res.send('hello from simple server :)');
-});
+app.use(router);
 
 app.use(notFoundErrorHandler);
 app.use(errorHandler);
