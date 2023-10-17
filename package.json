@@ -23,5 +23,6 @@
 		"dev": "nodemon server",
 		"prettier": "npx prettier --write .",
 		"prepare": "husky install"
-	}
+	},
+	"version": "1.0.0"
 }
