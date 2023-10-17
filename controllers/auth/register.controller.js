@@ -1,7 +1,7 @@
 'use strict';
 
 const userModel = require('../../models/user.model');
-const {hashPassword} = require('../../utils/auth.utils');
+const { hashPassword } = require('../../utils/auth.utils');
 
 const registerController = async (req, res, next) => {
 	try {
