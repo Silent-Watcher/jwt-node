@@ -5,10 +5,12 @@
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^7.6.3",
-    "nodemon": "^3.0.1"
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3"
   },
   "start": "server.js",
   "scripts": {
-    "dev": "nodemon server"
+    "dev": "nodemon server",
+	"prettier": "npx prettier --write ."
   }
 }
