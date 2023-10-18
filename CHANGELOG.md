@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/Silent-Watcher/jwt-node/compare/v1.1.0...v1.2.0) (2023-10-18)
+
+
+### Features
+
+* users can now register and log in using their generated JWT token ([dceaadc](https://github.com/Silent-Watcher/jwt-node/commit/dceaadca165baed408b23969553f9b3403b74923))
+
 ## [1.1.0](https://github.com/Silent-Watcher/jwt-node/compare/v1.0.0...v1.1.0) (2023-10-17)
 
 ### Features
