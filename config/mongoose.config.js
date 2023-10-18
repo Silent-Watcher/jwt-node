@@ -1,8 +1,8 @@
 'use strict';
 const { default: mongoose } = require('mongoose');
+const { env } = require('process');
 
-const DB_NAME = 'jwt';
-const DB_URL = `mongodb://127.0.0.1:27017/${DB_NAME}`;
+const DB_URL = `${env.DB_URL}/${env.DB_NAME}`;
 
 const connectToDb = async (dbUrl) => await mongoose.connect(dbUrl);
 

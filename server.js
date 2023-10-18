@@ -3,12 +3,14 @@ const http = require('http');
 const errorHandler = require('./middlewares/global/errorHandlerMiddleware');
 const notFoundErrorHandler = require('./middlewares/global/notFoundErrorHandler.middleware');
 const router = require('./routes/router');
+const { env } = require('process');
 
+require('./config/dotenv.config');
 require('./config/mongoose.config');
 
 const app = express();
 const server = http.createServer({}, app);
-const PORT = 3000;
+const PORT = env.PORT;
 
 app.use(express.json(), express.urlencoded({ extended: true }));
 
