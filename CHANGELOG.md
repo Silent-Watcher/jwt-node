@@ -2,15 +2,13 @@
 
 ## [1.1.0](https://github.com/Silent-Watcher/jwt-node/compare/v1.0.0...v1.1.0) (2023-10-17)
 
-
 ### Features
 
-* users can now login and fetch their jwt token from the response ([421a2f3](https://github.com/Silent-Watcher/jwt-node/commit/421a2f36a49b265654cf415dd52e1971111c7ad9))
-
+-   users can now login and fetch their jwt token from the response ([421a2f3](https://github.com/Silent-Watcher/jwt-node/commit/421a2f36a49b265654cf415dd52e1971111c7ad9))
 
 ### Bug Fixes
 
-* fix file formating after running prettier package ([6c2cec4](https://github.com/Silent-Watcher/jwt-node/commit/6c2cec423819f2de493e012f0df0791762a01696))
+-   fix file formating after running prettier package ([6c2cec4](https://github.com/Silent-Watcher/jwt-node/commit/6c2cec423819f2de493e012f0df0791762a01696))
 
 ## 1.0.0 (2023-10-17)
 

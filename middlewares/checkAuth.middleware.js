@@ -4,7 +4,7 @@ const userModel = require('../models/user.model');
 const { verifyToken } = require('../utils/auth.utils');
 
 const checkAuth = async (req, res, next) => {
-try {
+	try {
 		let authHeader = req?.headers?.authorization;
 		if (!authHeader) {
 			return res.status(403).json({
@@ -18,15 +18,15 @@ try {
 		if (bearer && bearer.toLowerCase() === 'bearer') {
 			if (token) {
 				let verifyResult = verifyToken(token);
-				const user = await userModel.findOne({ email: verifyResult.email });
+				const user = await userModel.findOne({
+					email: verifyResult.email,
+				});
 				req.authenticated = !!user;
 				if (!user)
-					return res
-						.status(404)
-						.send({
-							code: res.statusCode,
-							error: { message: 'invalid token' },
-						});
+					return res.status(404).send({
+						code: res.statusCode,
+						error: { message: 'invalid token' },
+					});
 				req.user = user;
 				return next();
 			}
@@ -37,9 +37,9 @@ try {
 				message: 'invalid credentials sent!',
 			},
 		};
-} catch (error) {
-	next(error);
-}
+	} catch (error) {
+		next(error);
+	}
 };
 
 module.exports = checkAuth;
