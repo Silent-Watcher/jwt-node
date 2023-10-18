@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/Silent-Watcher/jwt-node/compare/v1.2.0...v1.3.0) (2023-10-18)
+
+
+### Features
+
+* add project dotenv friendly ([555dc7e](https://github.com/Silent-Watcher/jwt-node/commit/555dc7e77c244f9727fa9839406d2d223ec9331d))
+
 ## [1.2.0](https://github.com/Silent-Watcher/jwt-node/compare/v1.1.0...v1.2.0) (2023-10-18)
 
 
